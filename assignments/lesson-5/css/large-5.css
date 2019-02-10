@@ -169,6 +169,29 @@ nav  li {
     list-style: none;
 }
 
+/*  ----- -- ------- ----- 5 days forecast */
+
+.forecast {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.forecastbox {
+    display: inline-block;
+    width: 10%;
+    padding: 20px;
+    margin: 1.15em;
+    background-color: #222;
+    box-shadow: 0 0 30px #999;
+    border-radius: 5px;
+}
+
+.forecastbox p {
+    color: white;
+}
+    
+
 /*  ----- -- ------- ----- Article */
 
 main {

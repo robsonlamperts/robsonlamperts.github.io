@@ -175,6 +175,12 @@ nav  li {
     list-style: none;
 }
 
+/*  ----- -- ------- ----- 5 days forecast */
+
+.forecast {
+    display: none;
+}
+
 
 /*  ----- -- ------- ----- Article */
 
