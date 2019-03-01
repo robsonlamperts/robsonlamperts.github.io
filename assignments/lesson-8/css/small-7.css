@@ -1,0 +1,290 @@
+/*  ----- -- ------- ----- gallery */
+
+.container {
+    margin: 1rem auto; 
+    display:grid; 
+    grid-template-columns: 1fr; 
+    max-width: 800px;; 
+    justify-content: center;
+    border: 1px solid #BBB;
+    box-shadow: 0 0 30px #777;
+}
+
+.container img {
+    max-width: 400px; 
+    height: auto; 
+    margin: .1rem;}
+
+figcaption {
+    font-size: smaller;
+}
+
+/* hover effect */
+.norm:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.norm {
+    display: block;
+    width: 100%;
+}
+
+
+
+/*  ----- -- ------- ----- general */
+#logo {
+    max-height: 90px;
+}
+
+body {
+    margin: auto;
+    background-color: #FFF;
+    /* border: 1px solid #BBB;
+    box-shadow: 0 0 30px #777; */
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    font-size: 15px
+}
+
+body li {
+        font-family: 'Roboto', sans-serif;
+        color: #000000;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #00B8A5;
+    font-size: 24px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #0ACF86;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #0ACF86;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* unvisited link */
+a:link {
+  color: #999;
+}
+
+/* visited link */
+a:visited {
+  color: #999;
+}
+
+/* mouse over link */
+a:hover {
+  color: #0ACF86;
+}
+
+/* selected link */
+a:active {
+  color: #0ACF86;
+}
+
+
+/*  ----- -- ------- ----- Header */
+
+header {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header img, .heading {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #00B8A5;
+}
+
+header .heading p {
+    color: #999;
+}
+
+.motto {
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+}
+
+/*  ----- -- ------- ----- Navigation */
+
+/*nav ul li {
+    display: none;
+}*/
+
+nav {
+    padding: 0px;
+    box-shadow: 0 6px 30px #999;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header, nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav li a {
+    color: #888;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav  li {
+  background-color: white;
+  color: white;
+ padding: 8px 16px;
+}
+
+.active a {
+  background-color: #222;
+  color:white;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #0ACF86;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+nav ul.hide {
+    display: none;
+}
+
+
+/*  ----- -- ------- ----- Hero */
+.hero-ph img {
+  max-width: 100%;
+  height: auto;
+    border: 1px red dashed;
+}
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    max-width: 800px;
+    height: auto;
+}
+
+.hero h1 {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.hero-ph {
+    margin: 10px auto;
+    max-width: 800px;
+    height: auto;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #222;
+    padding: 10px;
+    box-shadow: 0 0 30px #555;
+    border-radius: 5px;
+    max-height: 90%;
+}
+
+.weathersummary h1 {
+    color: #00B8A5;
+}
+
+.weathersummary li {
+    color: white;
+    list-style: none;
+}
+
+/*  ----- -- ------- ----- 5 days forecast */
+
+.forecast {
+    display: none;
+}
+
+
+/*  ----- -- ------- ----- Article */
+
+main {
+    max-width: 740px;
+    background-color: white;
+    margin: 10px auto;
+    padding: 30px;
+    box-shadow: 0 0 30px #999;
+    border-radius: 5px;
+
+}
+
+article img {
+    max-width: 100%;
+    margin: 10px;
+    box-shadow: 0 0 30px #999;
+    border-radius: 5px;
+}
+/*  ----- -- ------- ----- Contact*/
+
+.contactinfo {
+    max-width: 740px;
+    background-color: #444;
+    margin: 10px auto 0px;
+    padding: 30px;
+}
+
+.contactinfo p {
+    color: aliceblue;
+}
+
+
+.contactinfo img {
+    max-width: 100%;
+    margin: 5px;
+    box-shadow: 0 0 30px #333;
+    border-radius: 5px;
+}
+
+
+/*  ----- -- ------- ----- Footer */
+
+footer {
+    max-width: 740px;
+    background-color: #222;
+    margin:auto;
+    padding: 30px;
+}
+
+footer p {
+    color: white;
+}
+
+#currentDate {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 15px;
+}
