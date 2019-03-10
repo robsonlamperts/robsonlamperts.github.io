@@ -1,0 +1,408 @@
+
+
+/*  ----- -- ------- ----- gallery */
+
+.container {
+    margin: 1rem auto; 
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    max-width: 800px;; 
+    justify-content: center;
+}
+
+.container img {
+    max-width: 200px; 
+    height: auto; 
+    margin: .1rem;
+        
+    }
+
+figcaption {
+    font-size: smaller;
+}
+
+/* hover effect */
+.norm:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.norm {
+    display: block;
+    width: 120%;
+}
+
+/*  ----- -- ------- ----- general */
+#logo {
+    max-height: 90px;
+}
+
+body {
+    margin: auto;
+    background-color: #FFF;
+    border: 1px solid #BBB;
+    box-shadow: 0 0 30px #777;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    font-size: 15px
+}
+
+body li {
+        font-family: 'Roboto', sans-serif;
+        color: #000000;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #00B8A5;
+    font-size: 24px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #0ACF86;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #0ACF86;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* unvisited link */
+a:link {
+  color: #999;
+}
+
+/* visited link */
+a:visited {
+  color: #999;
+}
+
+/* mouse over link */
+a:hover {
+  color: #0ACF86;
+}
+
+/* selected link */
+a:active {
+  color: #0ACF86;
+}
+
+
+
+/*  ----- -- ------- ----- Header */
+
+
+header, nav {
+    text-align: center;
+}
+header {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header img, .heading {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header .heading p {
+    color: #999;
+}
+
+.motto {
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+}
+/*  ----- -- ------- ----- Navigation */
+
+nav li {
+	display: inline-flex;
+    align-items: center;
+
+}
+nav {
+    padding: 0px;
+    box-shadow: 0 6px 30px #999;
+}
+
+#display {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav li a {
+    color: #888;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav  li {
+  background-color: white;
+  color: white;
+}
+
+.active a {
+  background-color: #222;
+  color:white;
+}
+
+nav button {
+    display: none;
+}
+
+
+
+
+
+/*  ----- -- ------- ----- Hero */
+.hero-ph img {
+  max-width: 100%;
+  height: auto;
+}
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    max-width: 800px;
+    height: auto;
+}
+
+.hero h1 {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-ph {
+    margin: 10px auto;
+    max-width: 800px;
+    height: auto;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #222;
+    padding: 10px;
+    box-shadow: 0 0 30px #555;
+    border-radius: 5px;
+}
+
+.weathersummary h1 {
+    color: #00B8A5;
+}
+
+.weathersummary li {
+    color: white;
+    list-style: none;
+}
+
+/*  ----- -- ------- ----- 5 days forecast */
+
+.forecast {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.forecastbox {
+    display: inline-block;
+    width: 10%;
+    padding: 20px;
+    margin: 1.15em;
+    background-color: #222;
+    box-shadow: 0 0 30px #999;
+    border-radius: 5px;
+}
+
+.forecastbox p {
+    color: white;
+}
+
+/*  ----- -- ------- ----- Main forecast */
+
+.mainforecast {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.mainforecastbox {
+    width: 30%;
+    padding: 20px;
+    margin: 1.15em;
+    background-color: #222;
+    box-shadow: 0 0 30px #999;
+    border-radius: 5px;
+}
+
+.mainforecastbox p {
+    color: white;
+}
+
+
+
+    
+
+/*  ----- -- ------- ----- Article */
+
+.artic {
+    max-width: 740px;
+    background-color: white;
+    margin: 10px auto;
+    padding: 30px;
+    box-shadow: 0 0 30px #999;
+    border-radius: 5px;
+
+}
+
+article img {
+    max-width: 50%;
+    float: right;
+    margin: 10px;
+    box-shadow: 0 0 30px #999;
+    border-radius: 5px;
+}
+
+/*  ----- -- ------- ----- Contact*/
+
+.contactinfo {
+    max-width: 740px;
+    background-color: #444;
+    margin: 10px auto 0px;
+    padding: 30px;
+}
+
+.contactinfo p {
+    color: aliceblue;
+}
+
+
+.contactinfo img {
+    max-width: 50%;
+    float: right;
+    margin: 10px;
+    box-shadow: 0 0 30px #333;
+    border-radius: 5px;
+}
+
+/*  ----- -- ------- ----- Footer */
+
+footer {
+    max-width: 740px;
+    background-color: #222;
+    margin:auto;
+    padding: 30px;
+}
+
+footer p {
+    color: white;
+}
+
+#currentDate {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+/*  ----- -- ------- ----- Form */
+
+.thanks {
+    min-height:300px;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px;
+    font-family: 'Lato', sans-serif; 
+}
+
+form legend {
+    color: #00B8A5;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #555;
+    font-size: 0.8rem;
+    
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance:none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 20rem;
+}
+
+#storm-choice {
+    -webkit-appearance:none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    padding: 0.75rem;
+    color: black;
+    width: 100%;
+    max-width: 20rem;
+}
+
+
+form label.sbs  {
+    display: block;
+    padding: .75rem 0;
+    color: black;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 1%;
+    width: 96%;
+    max-width: 20rem;
+    font-family: 'Lato', sans-serif;
+}
+
+form label.top input:required {
+    border-left: darkred solid 6px;
+    
+}
+
+form label.top input:required:valid {
+    border-left: #00B8A5 solid 6px;
+    
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width: 100%;
+    max-width: 20rem;
+}
