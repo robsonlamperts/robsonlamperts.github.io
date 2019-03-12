@@ -259,8 +259,11 @@ nav button {
     color: white;
 }
 
+/*  ----- -- ------- ----- Img */
 
-
+.imgindex {
+    max-width: 100%;
+}
     
 
 /*  ----- -- ------- ----- Article */

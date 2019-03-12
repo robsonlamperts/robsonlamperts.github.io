@@ -253,6 +253,11 @@ nav ul.hide {
     color: white;
 }
 
+/*  ----- -- ------- ----- Img */
+
+.imgindex {
+    max-width: 100%;
+}
 
 /*  ----- -- ------- ----- Article */
 
