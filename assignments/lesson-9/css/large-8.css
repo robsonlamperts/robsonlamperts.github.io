@@ -262,7 +262,8 @@ nav button {
 /*  ----- -- ------- ----- Img */
 
 .imgindex {
-    max-width: 100%;
+    max-width: 40px;
+    margin: auto;
 }
     
 
