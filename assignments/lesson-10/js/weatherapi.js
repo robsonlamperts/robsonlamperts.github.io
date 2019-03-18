@@ -1,6 +1,6 @@
 let weatherRequest = new XMLHttpRequest();
 
-let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?q=Preston,Idaho&units=imperial&appid=02933daf7eacd95eb67507a4e55f6361';
+let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?q=Preston,US&units=imperial&appid=02933daf7eacd95eb67507a4e55f6361';
 weatherRequest.open('Get', apiURLstring, true);
 weatherRequest.send();
 
