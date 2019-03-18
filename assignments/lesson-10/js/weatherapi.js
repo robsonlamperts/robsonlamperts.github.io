@@ -1,6 +1,6 @@
 let weatherRequest = new XMLHttpRequest();
 
-let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=02933daf7eacd95eb67507a4e55f6361';
+let apiURLstring = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=02933daf7eacd95eb67507a4e55f6361';
 weatherRequest.open('Get', apiURLstring, true);
 weatherRequest.send();
 
@@ -19,7 +19,7 @@ weatherRequest.onload = function() {
 }
 
 let forecastRequest = new XMLHttpRequest();
-forecastRequest.open('Get', 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=02933daf7eacd95eb67507a4e55f6361', true);
+forecastRequest.open('Get', 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=02933daf7eacd95eb67507a4e55f6361', true);
 forecastRequest.send();
 
 forecastRequest.onload = function() {
@@ -32,18 +32,18 @@ forecastRequest.onload = function() {
     document.getElementById('ccsat').innerHTML = weatherData.list[3].main.temp;
     document.getElementById('ccsun').innerHTML = weatherData.list[4].main.temp;
     
-    var icon = "https://openweathermap.org/img/w/" + weatherData.list[0].weather[0].icon + ".png"
+    var icon = "http://openweathermap.org/img/w/" + weatherData.list[0].weather[0].icon + ".png"
     document.getElementById('ccwedi').setAttribute('src', icon);
     
-    var icon = "https://openweathermap.org/img/w/" + weatherData.list[1].weather[0].icon + ".png"
+    var icon = "http://openweathermap.org/img/w/" + weatherData.list[1].weather[0].icon + ".png"
     document.getElementById('ccthui').setAttribute('src', icon);
     
-    var icon = "https://openweathermap.org/img/w/" + weatherData.list[2].weather[0].icon + ".png"
+    var icon = "http://openweathermap.org/img/w/" + weatherData.list[2].weather[0].icon + ".png"
     document.getElementById('ccfrii').setAttribute('src', icon);
     
-    var icon = "https://openweathermap.org/img/w/" + weatherData.list[3].weather[0].icon + ".png"
+    var icon = "http://openweathermap.org/img/w/" + weatherData.list[3].weather[0].icon + ".png"
     document.getElementById('ccsati').setAttribute('src', icon);
     
-    var icon = "https://openweathermap.org/img/w/" + weatherData.list[4].weather[0].icon + ".png"
+    var icon = "http://openweathermap.org/img/w/" + weatherData.list[4].weather[0].icon + ".png"
     document.getElementById('ccsuni').setAttribute('src', icon);
 }
