@@ -1,0 +1,162 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>W Forecast | Fish Haven, Idaho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Local weather forecast for Preston, Idaho, United States.">    
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 769px)" href="css/large.css">
+    
+    
+</head>
+<body>
+
+    <header>
+        
+       <a href="index.html"><img id="logo" src="images/logo2.png" alt="W Forecast Logo"></a>
+        
+        <section class="heading">       
+        <h1>WForecast</h1>
+            <div class="motto">
+                <p>Always looking up for you!</p>
+            </div>
+        </section>
+        
+    </header>
+    
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+                <li ><a href="index.html">Home</a></li>
+                <li ><a href="preston.html">Preston</a></li>
+                <li ><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+                <li ><a href="stormcenter.html">Storm Center</a></li>
+                <li ><a href="gallery.html">Gallery</a></li>
+
+        </ul>  
+    </nav>
+    
+    <section class="hero">
+        <h1>
+        Fish Haven, Idaho
+        </h1>
+        
+        <div class="herodiv">        
+        <div class="hero-ph">
+         <img src="images/Idahoherofh800.jpg" alt="Picture of the city of Preston, Idaho">   
+
+            
+            <section class="weathersummary">
+            <h2>Weather Summary</h2>
+            <ul>
+                <li>Currently: <span id="cc-sky"></span></li>
+                <li>High: <span id="cc-temp"></span> °F</li>
+                <li><span id="output"></span></li>
+                <li>Humidity: <span id="cc-hum"></span></li>
+                <li>Wind Speed: <span id="cc-wind">5</span> mph</li>
+            </ul>
+            </section>
+                    
+        </div> 
+        </div>
+    </section> 
+    
+    <section class="forecast">
+        <div class="forecastbox">
+        <h2>Wed</h2>
+            <img id="ccwedi" src="" alt="">
+            <p><span id="ccwed"></span>°F</p>
+
+        </div>
+        
+                <div class="forecastbox">
+        <h2>Thu</h2>
+            <img id="ccthui" src="" alt="">        
+            <p><span id="ccthu"></span>°F</p>
+        </div>
+        
+                <div class="forecastbox">
+        <h2>Fri</h2>
+            <img id="ccfrii" src="" alt="">
+            <p><span id="ccfri"></span>°F</p>
+        </div>
+        
+                <div class="forecastbox">
+        <h2>Sat</h2>
+            <img id="ccsati" src="" alt="">
+            <p><span id="ccsat"></span>°F</p>
+        </div>
+        
+                <div class="forecastbox">
+        <h2>Sun</h2>
+            <img id="ccsuni" src="" alt="">
+            <p><span id="ccsun"></span>°F</p>
+        </div>
+    
+    
+    
+    </section>
+    
+    <main class="artic">
+        <article>
+            
+        <img src="images/lake530.jpg" alt="Man sitting admiring a lake">    
+            
+        <h1>7 ways to travel smarter, cheaper and more often</h1>
+            <p>by Kevin Malonet<p>
+            
+            <p> For people who’ve downshifted at work or are putting kids through college, money can be tight. But there are a number of simple ways to make sure you’re stretching those travel dollars as far as possible.</p>
+            
+            <h2>1 - Know where the bargains are</h2>
+            
+            <p>You probably know some ways to watch for deals on airfare and hotels. Make sure you’re also on every possible list for printable coupons and discount codes by signing up for alerts from all your preferred airlines, hotels and rental car agencies and following them on Facebook and Twitter.</p>
+            
+            <p><a href="#">See more</a></p>
+            
+
+        </article>
+
+    </main>
+    
+    
+    <section class="contactinfo">
+        
+                
+        <div class="map">
+        <img src="images/mapofpreston700.jpg" alt="Map of Preston, Idaho">        
+        </div>
+        
+        <h1>Contact Information</h1>
+        <br>
+        <p>30 N 1st E</p>
+        <p>Preston, ID 83263</p>
+        <p>208.948.1274</p>
+        <p>contact@wforecast.com</p>
+
+    
+    </section>
+
+    <footer>
+
+        
+        <p>&copy;2019 - WForecast - <a href="http://www.byui.edu/online">Design by Robson Lampert</a></p>
+        
+        <span id="currentDate"></span>
+            
+    </footer>
+    
+    <script src="scripts/weatherapifh.js"></script>     
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+
+</body>
+</html>

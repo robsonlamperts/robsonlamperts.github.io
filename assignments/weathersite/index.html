@@ -1,0 +1,207 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>W Forecast | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Local weather forecast for Preston, Idaho, United States.">    
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 769px)" href="css/large.css">
+    
+    
+</head>
+<body>
+
+    <header>
+        
+       <a href="index.html"><img id="logo" src="images/logo2.png" alt="W Forecast Logo"></a>
+        
+        <section class="heading">       
+        <h1>WForecast</h1>
+            <div class="motto">
+                <p>Always looking up for you!</p>
+            </div>
+        </section>
+        
+    </header>
+    
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li ><a href="preston.html">Preston</a></li>
+                <li ><a href="sodasprings.html">Soda Springs</a></li>
+                <li ><a href="fishhaven.html">Fish Haven</a></li>
+                <li ><a href="stormcenter.html">Storm Center</a></li>
+                <li ><a href="gallery.html">Gallery</a></li>
+
+        </ul>  
+    </nav>
+    
+    
+    <section class="mainforecast">
+        
+        <div id="divione" class="mainforecastbox">
+        <img class="imgindex" src="images/nature1.jpg" alt="picture of a mountain">
+        </div>
+        
+        <div id="divitwo" class="mainforecastbox">
+        <img class="imgindex" src="images/nature2.jpg" alt="picture of a lake">
+        </div>
+        
+        <div id="divithree"  class="mainforecastbox">
+        <img class="imgindex" src="images/nature3.jpg" alt="picture of a valley during sunset">
+        </div>
+    
+    
+    </section>
+    
+    <main>
+    </main>
+    
+    
+    <section class="contactinfo">
+        
+                
+        <div class="map">
+        <img src="images/mapofpreston700.jpg" alt="Map of Preston, Idaho">        
+        </div>
+        
+        <h1>Contact Information</h1>
+        <br>
+        <p>30 N 1st E</p>
+        <p>Preston, ID 83263</p>
+        <p>208.948.1274</p>
+        <p>contact@wforecast.com</p>
+
+    
+    </section>
+
+    <footer>
+
+        
+        <p>&copy;2019 - WForecast - <a href="http://www.byui.edu/online">Design by Robson Lampert</a></p>
+        
+        <span id="currentDate"></span>
+            
+    </footer>
+    
+       <script>
+           
+     var header = document.querySelector("#divione");
+    var section = document.querySelector('#divitwo');
+    var yeah = document.querySelector('#divithree');
+           
+    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    
+    var request = new XMLHttpRequest();
+
+    request.open('GET', requestURL);
+
+    request.responseType = 'json';
+    request.send();
+        
+    request.onload = function() {
+        var superHeroes = request.response;
+        populateHeader(superHeroes);
+        showHeroes(superHeroes);
+        showH(superHeroes);
+    }
+    
+    function populateHeader(jsonObj) {
+  var heroes = jsonObj['towns'];
+      
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myPara4 = document.createElement('p');
+
+    myH2.textContent = heroes[0].name;
+    myPara1.textContent = heroes[0].motto;
+    myPara2.textContent = 'Year Founded: ' + heroes[0].yearFounded;
+    myPara3.textContent = 'Population: ' + heroes[0].currentPopulation;
+    myPara4.textContent = 'Annual Rain Fall: ' + heroes[0].averageRainfall;
+        
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+
+    header.appendChild(myArticle);
+    }
+        
+    function showHeroes(jsonObj) {
+  var heroes = jsonObj['towns'];
+      
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myPara4 = document.createElement('p');
+
+    myH2.textContent = heroes[2].name;
+    myPara1.textContent = heroes[2].motto;
+    myPara2.textContent = 'Year Founded: ' + heroes[2].yearFounded;
+    myPara3.textContent = 'Population: ' + heroes[2].currentPopulation;
+    myPara4.textContent = 'Annual Rain Fall: ' + heroes[2].averageRainfall;
+        
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+
+    section.appendChild(myArticle);
+  
+}
+           
+    function showH(jsonObj) {
+  var heroes = jsonObj['towns'];
+      
+    var myArticle = document.createElement('article');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+    var myPara4 = document.createElement('p');
+
+    myH2.textContent = heroes[6].name;
+    myPara1.textContent = heroes[6].motto;
+    myPara2.textContent = 'Year Founded: ' + heroes[6].yearFounded;
+    myPara3.textContent = 'Population: ' + heroes[6].currentPopulation;
+    myPara4.textContent = 'Annual Rain Fall: ' + heroes[6].averageRainfall;
+        
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+
+    yeah.appendChild(myArticle);
+  
+}
+    
+    
+
+        
+    </script>
+    
+        
+    <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburger.js"></script>
+
+
+</body>
+</html>
