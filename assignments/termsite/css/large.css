@@ -122,6 +122,40 @@ nav button {
   position: relative;
 }
     
+.hero-image-reservation {
+  background-image: linear-gradient(rgba(0,0, 0, 0.5), rgba(251, 251, 251, 0.5)), url("../img/hotelroom.jpg");
+
+  height: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image-contact {
+  background-image: linear-gradient(rgba(0,0, 0, 0.5), rgba(251, 251, 251, 0.5)), url("../img/callus.jpg");
+
+  height: 50%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image-services {
+  background-image: linear-gradient(rgba(0,0, 0, 0.5), rgba(251, 251, 251, 0.5)), url("../img/services.jpg");
+
+  height: 70%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+    
+    
     
 
 .hero-text {
@@ -180,6 +214,14 @@ box-shadow: 0px 0px 10px -5px rgba(82,82,82,0.36);
     .pic-box p {
         padding-top: 0px;
         padding-bottom: 0px;
+        background-color: white;
+        color: #9e4770;
+        margin-top: 0;
+    }
+    
+    .pic-box a {
+        padding-left: 10px;
+        padding-bottom: 10px;
         background-color: white;
         color: #9e4770;
         margin-top: 0;
@@ -261,6 +303,20 @@ box-shadow: 0px 0px 10px -5px rgba(82,82,82,0.36);
         padding: 20px;       
     }
 
+        #cta a {
+        background-color: #631D76;
+        padding: 20px;     
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+            #cta p {
+        padding: 20px;     
+        color: white;
+                max-width: 60%;
+                margin: auto;
+    }
     
     
     /*  ----- -- ------- ----- Contact */
@@ -286,7 +342,101 @@ box-shadow: 0px 0px 10px -5px rgba(82,82,82,0.36);
 }
     
     
+    /*  ----- -- ------- ----- Form */
+
+
+.reservation {
+    max-width: 740px;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0px auto;
+    padding: 30px;
+}
+
+.thanks {
+    min-height:300px;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px;
+    font-family: 'roboto', sans-serif; 
+}
+
+form legend {
+    color: #631D76;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #555;
+    font-size: 0.8rem;
     
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance:none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 20rem;
+}
+
+#storm-choice {
+    -webkit-appearance:none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    padding: 0.75rem;
+    color: black;
+    width: 100%;
+    max-width: 20rem;
+}
+
+
+form label.sbs  {
+    display: block;
+    padding: .75rem 0;
+    color: black;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #631D76;
+    color: white;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 1%;
+    width: 96%;
+    max-width: 20rem;
+    font-family: 'roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+form label.top input:required {
+    border-left: darkred solid 6px;
     
+}
+
+form label.top input:required:valid {
+    border-left: #00B8A5 solid 6px;
+    
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width: 100%;
+    max-width: 20rem;
+}
+
+
     
 }
