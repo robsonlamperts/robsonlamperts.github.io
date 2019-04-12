@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Temple Inn and Suites | Home</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+    
+
+</head>
+
+<body>
+    
+    <nav id="menu">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+                <li ><a href="index.html">Home</a></li>
+                <li ><a href="temple.html">Temple</a></li>
+                <li class="active"><a href="reservations.html">Reservation</a></li>
+                <li ><a href="services.html">Services</a></li>
+                <li ><a href="contact.html">Contact</a></li>
+        </ul>   
+    </nav>
+    
+    <div class="hero-image-reservation">
+      <div class="hero-text">
+        <h1>Reservation</h1>
+                <div>
+        <h2>Fill out the form and make your reservation.</h2>
+
+                </div>
+      </div>
+    </div>
+
+    
+    
+    <section class="reservation">
+    
+    <form method="get" action="thanks.html">
+
+    
+    
+    <fieldset>
+        <legend> <h2>Reservation Details</h2> </legend>
+        
+        <label class="top" required>Start Date*<input type="date" name="completeDate"></label>
+        <label class="top" required>End Date*<input type="date" name="completeDate"></label>
+        
+        <label class="top" for="city-choice" required>Location*</label>
+        <input list="cities" id="storm-choice" name="ice-cream-choice" />
+
+        <datalist id="cities" >
+            <option value="Washington DC">
+            <option value="Manhattan">
+            <option value="Other">
+            <option value="Other">
+            <option value="Other">
+        </datalist>
+        
+        <label class="top">Number of Adults*<input type="number" name="number" required></label>
+        <label class="top">Number of Children<input type="number" name="number" ></label>   
+
+        <div>Type of rooms*</div>        
+        <input type="checkbox" name="vehicle1" value="Bike"> Standard<br>
+        <input type="checkbox" name="vehicle2" value="Car"> Comfort<br>
+        <input type="checkbox" name="vehicle3" value="Boat"> Deluxe<br><br>
+        
+        </fieldset>
+        
+        <fieldset>
+                
+        <legend> <h2> Your Information </h2> </legend>
+        
+        <label class="top">Full Name*<input type="text" name="fname" required pattern="[A-Za-z ]{5,}"></label>
+        <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+        <label class="top">Phone*<input type="tel" name="phone" placeholder="123555123" required></label>
+        <label class="top">Home Town or Country*<input type="text" name="ftown" placeholder="City, State" required></label>
+                
+    </fieldset>
+    
+    <fieldset>
+        <legend> <h2>Special Requests </h2>  </legend>
+            
+        <label class="top" for="comment">Comments:</label>
+
+        <textarea id="comment" name="comment"
+                  rows="5" cols="40">
+        </textarea>  
+            
+    </fieldset>
+    
+    <input type="submit" value="Make Reservation" class="submitBtn">
+    
+    </form>
+        
+
+
+    </section>
+ 
+    
+    <footer>        
+        <div class="credits">
+            <p>Designed by me</p>
+        </div>
+    
+    </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
